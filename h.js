@@ -14,8 +14,7 @@ Array.prototype.myForEach = function(fn) {
         fn(element);
     }
 }
-
-people.myForEach(person => {
+people.forEach((person, index) => {
     // console.log('Xin chao, toi la ' + person.name + ', ' + person.age + ' tuoi.');
-    console.log(`Xin chao, toi la ${person.name}, ${person.age} tuoi.`);
+    console.log(`${index + 1} Xin chao, toi la ${person.name}, ${person.age} tuoi.`);
 });
