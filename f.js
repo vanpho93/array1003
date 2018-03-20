@@ -17,5 +17,8 @@ Array.prototype.myEvery = function(checkFn) {
     return true;
 }
 
-console.log(numbers.myEvery(x => x > 1));
+console.log(numbers.myEvery(x => {
+    // ...
+    return x > 1;
+}));
 console.log(people.myEvery(x => x.age > 9));
